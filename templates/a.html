@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    .header {
+      min-height: 100vh;
+      width: 100%;
+      background-color: #1b1b1e;
+      background-image:
+        radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 4%;
+    }
+
+    .nav-links {
+      text-align: right;
+    }
+
+    .nav-links ul {
+      list-style: none;
+    }
+
+    .nav-links ul li {
+      display: inline-block;
+      padding: 1em 2em;
+    }
+
+    .nav-links ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+    }
+
+    .nav-links ul li::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: #d3e023;
+      transition: width 0.5s;
+    }
+
+    .nav-links ul li:hover::after {
+      width: 100%;
+    }
+
+    .text-box {
+      color: white;
+      text-align: center;
+      margin-top: 30vh;
+    }
+
+    .text-box h1 {
+      font-size: 2.5em;
+    }
+
+    .text-box p {
+      font-size: 1.2em;
+      margin: 1em 0;
+    }
+
+    .button1 {
+      padding: 0.8em 1.5em;
+      border-radius: 1em;
+      background-color: rgb(235, 170, 170);
+    }
+
+    .button1:hover {
+      background-color: rgb(230, 105, 105);
+    }
+
+    .hero-btn {
+      text-decoration: none;
+      font-size: 1.2em;
+      color: rgb(32, 31, 31);
+    }
+
+    .user {
+      background-color: #1b1b1e;
+      color: white;
+      text-align: center;
+      padding: 2em 1em;
+    }
+
+    .form {
+  background-color: rgba(43, 42, 42, 0.5);
+  padding: 2em; /* Increased padding */
+  border-radius: 25px;
+  max-width: 450px; /* Increased max-width */
+  margin: 0 auto;
+  box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+}
+
+    .form input {
+      width: 100%;
+      padding: 0.8em;
+      margin: 0.5em 0;
+      border-radius: 20px;
+      border: none;
+      background-color: rgba(59, 58, 58, 0.5);
+      color: white;
+    }
+
+    .form button {
+      background-color: rgb(235, 170, 170);
+      padding: 0.8em;
+      border-radius: 10px;
+      border: none;
+      color: black;
+    }
+
+    .services, .footer {
+      background-color: #1b1b1e;
+      color: white;
+      text-align: center;
+      padding: 2em;
+    }
+
+    .map {
+      width: 100%;
+      height: 300px;
+      border-radius: 1em;
+      margin: 2em 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links ul li {
+        padding: 1em 1em;
+      }
+
+      .text-box h1 {
+        font-size: 2em;
+      }
+
+      .text-box p {
+        font-size: 1em;
+      }
+
+      .button1 {
+        padding: 0.6em 1em;
+      }
+
+      .neurons {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      .form {
+        width: 90%;
+      }
+
+      .services iframe {
+        width: 100%;
+        height: 250px;
+      }
+    }
+  </style>
+  <title>i-Help</title>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="#"><img src="static/logo.png" width="70" height="40"><img class="i" src="static/ss.png" width="100" height="40"></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="/login">LOGIN</a></li>
+          <li><a href="/aboutus">SIGN UP</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="text-box">
+      <h1>Your Personal Eyecare Buddy</h1>
+      <p>Quick information about diabetic retinopathy by analyzing eye scans.</p>
+      <button class="button1"><a href="diabetic_retinal.html" class="hero-btn">Click here</a></button>
+    </div>
+  </section>
+
+  <section class="user">
+    <p>Enter User's details:</p>
+    <p>A quick diabetic retinopathy test just a click away...</p>
+    <form class="form" method="post" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Enter Patient's name" required>
+      <input type="email" name="emailId" placeholder="Enter email Id" required>
+      <input type="text" name="contact" placeholder="Enter contact no" required>
+      <input type="number" name="username" placeholder="Enter age" required>
+      <label for="customFile" style="color:white">Upload eye scan</label>
+      <input type="file" id="customFile" name="imagefile" required><br><br>
+      <button type="submit" class="btn-lg" <a href="#">Predict</a></button>
+    </form>
+  </section>
+
+  <section class="services">
+    <p class="head">More about us:</p>
+    <p>To detect diabetic retinopathy using eye scans. Modern solution to detect eye defects in early stages.</p>
+    <img src="static/eyegifproj.gif" class="neurons">
+    <div class="info">
+      <h1>Retinopathy</h1>
+      <p>Retinopathy can lead to blindness. Early detection is critical.</p>
+      <h1>Service we provide</h1>
+      <p>We provide information about diabetic retinopathy severity through analysis of eye scans.</p>
+      <h1>Patient's report</h1>
+      <p>Reports on severity are sent to the patient’s email for further treatment.</p>
+    </div>
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31105.11358333144!2d77.66648757910154!3d12.96294340000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae122cf061d49d%3A0xed65279d00137700!2sVasan%20Eye%20Care%20-%20Marathahalli!5e0!3m2!1sen!2sin!4v1671983951826!5m2!1sen!2sin"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section class="footer">
+    <h4>About us</h4>
+    <p>i-Help - Your personal eye care buddy</p>
+    <div class="icons">
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-instagram"></i>
+    </div>
+    <p>2023 All Rights Reserved By i-Help</p>
+  </section>
+</body>
+
+</html>
