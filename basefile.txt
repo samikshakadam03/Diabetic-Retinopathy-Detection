@@ -1,0 +1,10 @@
+DIABETIC RETINOPATHY report by i-Help
+Patient name: saa
+Age: 0
+Email id: samikshakadam0403@gmail.com
+Contact no: 8828552766
+Diagnosis:
+1. Retina scan shows signs of No Diabetic Retinopathy DR.
+Further advice for treatment:1. Patient is advised to exercise regularly.a) For further advice the patient can visit the nearest eye hospital to the current location (as displayed on the website).
+b) To contact us visit our i-Help web app.
+c) In case this report is lost, a copy of this report can be found on our IPFS Web3 storage.
